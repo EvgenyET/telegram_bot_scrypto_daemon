@@ -1,10 +1,59 @@
-# telegram_bot_scrypto_daemon
+# Telegram-магазин с оплатой в TON
+
+Рабочее название: `telegram_bot_scrypto_daemon`.
 
 Бот проводит пользователя через выбор приложения и оплату в TON. После нажатия кнопки он формирует ссылку Tonkeeper с комментарием платежа, запускает периодическую проверку транзакции и при подтверждении отправляет ссылку на скачивание.
 
 **Python-портфолио Евгения Толмачева** · Python · python-telegram-bot · APScheduler · TON API · Requests
 
-![Интерфейс telegram_bot_scrypto_daemon](docs/preview.webp)
+<img src="docs/screenshots/1.jpg" alt="Скриншот 1" width="532">
+
+## Скриншоты
+
+<details>
+<summary>Telegram-магазин с оплатой в TON - 10 снимков</summary>
+
+### Скриншот 1
+
+<img src="docs/screenshots/1.jpg" alt="Скриншот 1" width="532">
+
+### Скриншот 2
+
+<img src="docs/screenshots/2.jpg" alt="Скриншот 2" width="687">
+
+### Скриншот 3
+
+<img src="docs/screenshots/3.jpg" alt="Скриншот 3" width="624">
+
+### Скриншот 4
+
+<img src="docs/screenshots/4.jpg" alt="Скриншот 4" width="616">
+
+### Скриншот 6
+
+<img src="docs/screenshots/6.jpg" alt="Скриншот 6" width="860">
+
+### Скриншот 7
+
+<img src="docs/screenshots/7.jpg" alt="Скриншот 7" width="860">
+
+### Скриншот 9
+
+<img src="docs/screenshots/9.jpg" alt="Скриншот 9" width="860">
+
+### Скриншот 11
+
+<img src="docs/screenshots/11.jpg" alt="Скриншот 11" width="860">
+
+### Скриншот 12
+
+<img src="docs/screenshots/12.jpg" alt="Скриншот 12" width="860">
+
+### Скриншот 15
+
+<img src="docs/screenshots/15.jpg" alt="Скриншот 15" width="860">
+
+</details>
 
 ## Возможности
 
@@ -43,6 +92,7 @@ APScheduler запускает повторные проверки и тайма
 
 ## С чего начать просмотр кода
 
+
 Основной файл удобно читать от buy_bot к check_payment и check_payment_status: они связывают пользовательский диалог, расписание проверок и выдачу результата.
 
 ## Подготовка и запуск
@@ -76,7 +126,8 @@ python telegram_bot_scrypto_daemon.py
 ```text
 telegram_bot_scrypto_daemon/
 ├── docs/
-│   └── preview.webp
+│   ├── preview.webp
+│   └── screenshots/  # скриншоты из портфолио
 ├── .env.example
 ├── .gitignore
 ├── README.md
@@ -92,6 +143,6 @@ telegram_bot_scrypto_daemon/
 
 ## Состав репозитория
 
-Сохранены авторские исходники, их имена и структура, зависимости и компактный скриншот. Рабочие базы, наборы данных, модели и виртуальные окружения исключены. Секреты заменены обозначениями `YOUR_...` / `REDACTED_...`; реальные значения задаются локально. Исходные алгоритмы при оформлении портфолио не перерабатывались.
+Сохранены авторские исходники, их имена и структура, зависимости и скриншоты интерфейса. Рабочие базы, наборы данных, модели и виртуальные окружения исключены. Секреты заменены обозначениями `YOUR_...` / `REDACTED_...`; реальные значения задаются локально. Исходные алгоритмы при оформлении портфолио не перерабатывались.
 
 Автор: [Евгений Толмачев](https://github.com/EvgenyET) · [Портфолио](https://evgeny.tech/)
